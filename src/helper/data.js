@@ -1,4 +1,4 @@
-export const data = [
+const data = [
   {
     name: "Kareem Abdul-Jabbar",
     img: "https://s22928.pcdn.co/wp-content/uploads/2018/03/Kareem-Abdul-Jabbar.jpg",
@@ -120,3 +120,4 @@ export const data = [
     ],
   },
 ];
+export default data
