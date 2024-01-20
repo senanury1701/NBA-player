@@ -1,9 +1,44 @@
-.home {
+.card-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 5px;
     grid-row-gap: 5px;
+}
+@media screen and (min-width: 1401px) {
+    .card-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 699px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(1, 1fr);
+    }
+}
+.home {
+    display: flex;
+    flex-direction: column; /* İçeriği dikeyde düzenle */
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    
+    background-image: url(../assets/nba-logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; 
+
 }

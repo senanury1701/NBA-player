@@ -4,12 +4,18 @@ import './index.css'
 
 const Home = () => {
         return (
-        <div >
-            <h1>NBA Players</h1>
-            <div className="home">
-                { data.map((item, index)=> <Card {...item} key={index}/> )}                   
-            </div>
+        <div className="">
+        <div className="home-text">
+            <h1>NBA Players</h1>            
         </div>
+
+            <div className="home">
+                <div className="card-container">
+                    { data.map((item, index)=> <Card {...item} key={index}/> )}                   
+                </div>
+            </div>            
+        </div>
+
     )
 }
 export default Home
